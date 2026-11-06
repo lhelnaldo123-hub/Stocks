@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Book Stocker icons</title>
+<style>
+body{font-family:sans-serif;text-align:center;padding:20px}
+img{width:120px;border-radius:24px;margin:8px}
+a{display:block;margin:10px auto;max-width:300px;padding:14px;background:#0a64d8;color:#fff;border-radius:12px;text-decoration:none}
+</style>
+</head>
+<body>
+<h3>Book Stocker icons</h3>
+<div id="o"></div>
+<script>
+[192,512].forEach(function(n){
+  var c=document.createElement('canvas');c.width=c.height=n;
+  var x=c.getContext('2d');
+  var g=x.createLinearGradient(0,0,n,n);
+  g.addColorStop(0,'#19b4ff');g.addColorStop(1,'#0a64d8');
+  x.fillStyle=g;x.fillRect(0,0,n,n);
+  x.font=(n*0.5)+'px serif';x.textAlign='center';x.textBaseline='middle';
+  x.fillText('📚',n/2,n/2+n*0.03);
+  var u=c.toDataURL('image/png');
+  document.getElementById('o').innerHTML+='<img src="'+u+'"><a download="icon-'+n+'.png" href="'+u+'">Download icon-'+n+'.png</a>';
+});
+</script>
+</body>
+  </html>
