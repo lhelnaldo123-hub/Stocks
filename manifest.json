@@ -1,0 +1,16 @@
+{
+  "name": "Book Stocker",
+  "short_name": "Book Stocker",
+  "description": "Keep records of books: stock in, taken out and what is left.",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#e8edf4",
+  "theme_color": "#0a64d8",
+  "icons": [
+    { "src": "icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}
